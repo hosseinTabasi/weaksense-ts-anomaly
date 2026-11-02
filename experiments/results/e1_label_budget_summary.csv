@@ -1,0 +1,21 @@
+setting,method,auroc_mean,auroc_std,auprc_mean,auprc_std,f1@0.5_mean,f1@0.5_std
+budget=0.0,LF label model -> encoder,0.845,0.008,0.747,0.019,0.635,0.013
+budget=0.0,PU (nnPU),0.836,0.007,0.683,0.009,0.641,0.013
+budget=0.0,WeakSense (LF+labels+curriculum),0.802,0.051,0.661,0.058,0.639,0.008
+budget=0.005,Supervised (budget only),0.617,0.086,0.61,0.105,0.399,0.188
+budget=0.005,PU (nnPU),0.847,0.005,0.69,0.011,0.644,0.014
+budget=0.005,WeakSense (LF+labels+curriculum),0.834,0.027,0.752,0.053,0.645,0.004
+budget=0.01,Supervised (budget only),0.738,0.027,0.764,0.018,0.68,0.018
+budget=0.01,PU (nnPU),0.832,0.002,0.674,0.011,0.635,0.013
+budget=0.01,WeakSense (LF+labels+curriculum),0.882,0.004,0.828,0.012,0.658,0.003
+budget=0.05,Supervised (budget only),0.851,0.015,0.829,0.011,0.738,0.014
+budget=0.05,PU (nnPU),0.872,0.022,0.746,0.038,0.664,0.017
+budget=0.05,WeakSense (LF+labels+curriculum),0.882,0.022,0.837,0.035,0.689,0.014
+budget=0.1,Supervised (budget only),0.809,0.015,0.793,0.02,0.741,0.014
+budget=0.1,PU (nnPU),0.872,0.019,0.738,0.036,0.694,0.009
+budget=0.1,WeakSense (LF+labels+curriculum),0.892,0.006,0.842,0.004,0.764,0.015
+budget=1.0,Fully supervised,0.852,0.037,0.774,0.031,0.732,0.004
+unsupervised,IsolationForest,0.854,0.012,0.777,0.017,,
+unsupervised,Dense autoencoder,0.726,0.009,0.651,0.01,,
+unsupervised,LF majority vote (no training),0.755,0.0,0.627,0.0,0.613,0.0
+unsupervised,LF Dawid-Skene posterior (no training),0.813,0.0,0.696,0.0,0.628,0.0
