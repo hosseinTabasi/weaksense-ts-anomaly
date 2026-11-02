@@ -1,0 +1,7 @@
+variant,auroc_mean,auroc_std,auprc_mean,auprc_std,f1@0.5_mean,f1@0.5_std
+Full WeakSense,0.882,0.004,0.828,0.012,0.658,0.003
+No LFs (labels + self-training),0.818,0.048,0.806,0.018,0.727,0.02
+No self-training,0.868,0.006,0.809,0.016,0.637,0.017
+No curriculum (fixed threshold),0.874,0.023,0.838,0.024,0.657,0.011
+Majority vote instead of Dawid-Skene,0.847,0.006,0.768,0.025,0.602,0.017
+No true labels (budget 0),0.802,0.051,0.661,0.058,0.639,0.008

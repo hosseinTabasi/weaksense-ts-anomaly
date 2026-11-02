@@ -1,0 +1,13 @@
+transfer,method,auroc_mean,auroc_std,auprc_mean,auprc_std,f1@0.5_mean,f1@0.5_std
+SKAB valve1 -> valve2+other,Supervised (budget only),0.55,0.027,0.527,0.025,0.427,0.023
+SKAB valve1 -> valve2+other,LF label model -> encoder,0.767,0.019,0.561,0.02,0.648,0.017
+SKAB valve1 -> valve2+other,PU (nnPU),0.685,0.064,0.508,0.012,0.587,0.049
+SKAB valve1 -> valve2+other,WeakSense (LF+labels+curriculum),0.785,0.038,0.614,0.044,0.656,0.022
+SKAB valve1 -> valve2+other,Fully supervised (source),0.8,0.025,0.659,0.032,0.548,0.025
+SKAB valve1 -> valve2+other,IsolationForest,0.797,0.006,0.732,0.012,,
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",Supervised (budget only),0.727,0.018,0.939,0.006,0.922,0.002
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",LF label model -> encoder,0.895,0.011,0.981,0.003,0.933,0.005
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",PU (nnPU),0.738,0.042,0.947,0.01,0.854,0.052
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",WeakSense (LF+labels+curriculum),0.867,0.028,0.974,0.007,0.911,0.021
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",Fully supervised (source),0.884,0.007,0.978,0.003,0.863,0.019
+"TEP faults {1,2,4-8,10-12} -> {13,14,16-21}",IsolationForest,0.886,0.003,0.98,0.001,,
