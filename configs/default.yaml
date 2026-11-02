@@ -1,0 +1,9 @@
+# WeakSense: few intuitive knobs
+window: 32          # samples per window
+reference: 100      # first N samples of each run assumed normal (commissioning period) for per-run scaling
+label_budget: 0.01  # fraction of training windows with a true label
+self_train_rounds: 3
+confidence_start: 0.95   # curriculum: pseudo-label threshold starts here...
+confidence_end: 0.85     # ...and relaxes to here
+epochs: 15
+seeds: [0, 1, 2]
